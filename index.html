@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-Br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BioAgro Energia - Agrinho 2026</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+    <!-- Cabeçalho / Menu -->
+    <header>
+        <div class="logo">
+            <h2>BioAgro <span>Energia</span></h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#fontes">Fontes de Energia</a></li>
+                <li><a href="#calculadora">Simulador</a></li>
+                <li><a href="#conexoes">Campo e Cidade</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-text">
+            <h1>Agro Forte, Futuro Sustentável</h1>
+            <p>Conectando a produção do campo com a energia limpa que transforma o planeta.</p>
+            <a href="#fontes" class="btn">Conhecer Soluções</a>
+        </div>
+    </section>
+
+    <!-- Fontes de Energia Limpa no Campo -->
+    <section id="fontes" class="container">
+        <h2 class="section-title">Energia Limpa no Meio Rural</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <h3>☀️ Energia Solar</h3>
+                <p>Uso de painéis fotovoltaicos em telhados de galpões e pastagens para abastecer bombas d'água e cercas elétricas.</p>
+            </div>
+            <div class="card">
+                <h3>💩 Biogás</h3>
+                <p>Transformação de dejetos de animais (suínos e bovinos) em gás combustível e energia elétrica através de biodigestores.</p>
+            </div>
+            <div class="card">
+                <h3>🌱 Biomassa</h3>
+                <p>Aproveitamento de restos de colheita, como o bagaço da cana-de-açúcar e palhas, para queima sustentável e geração térmica.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculadora Interativa (JavaScript Act) -->
+    <section id="calculadora" class="calc-section">
+        <div class="container">
+            <h2 class="section-title">Simulador de Impacto Sustentável</h2>
+            <p class="calc-desc">Descubra quantas lâmpadas da cidade podem ser acesas por um mês com o reaproveitamento de resíduos de animais do campo!</p>
+            
+            <div class="calc-box">
+                <label for="animais">Quantidade de animais na fazenda:</label>
+                <input type="number" id="animais" placeholder="Ex: 150" min="1">
+                <button onclick="calcularImpacto()">Calcular Impacto</button>
+                
+                <div id="resultado" class="resultado-box">
+                    <!-- O JavaScript vai preencher este espaço -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Conexões que Transformam -->
+    <section id="conexoes" class="container text-section">
+        <h2>Campo e Cidade: Conexões que Transformam</h2>
+        <p>A geração de energia no campo não beneficia apenas o produtor rural. Quando a fazenda gera sua própria eletricidade a partir do biogás ou do sol, ela reduz a demanda das usinas tradicionais, evita apagões nas cidades e diminui a emissão de poluentes que afetam o clima de todo o planeta.</p>
+        <p><strong>Produzir preservando é o verdadeiro equilíbrio para um amanhã melhor!</strong></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Projeto Escolar Agrinho - Sustentabilidade e Tecnologia no Campo.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
